@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Grape</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-purple-100 to-green-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/logotipo.jpg" class="h-13 w-16" alt="Vital Grape Logo">
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Iniciar
+                    Sesión</button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Abrir menú principal</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-green-500 bg-green-100 rounded md:bg-transparent md:text-green-600 md:p-0 md:dark:text-green-500"
+                            aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#productos"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-600 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-600 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-600 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-600 md:p-0 md:dark:hover:text-green-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Comprar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section>
+        <div class="pt-24 pb-16 md:pt-32 md:pb-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Left Column -->
+                    <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                        <h1 class="text-5xl md:text-6xl font-extrabold text-purple-800 mb-6 animate-fade-in-down">
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-green-600">
+                                Belleza y Cuidado
+                            </span>
+                        </h1>
+                        <p class="text-xl text-gray-700 mb-8 animate-fade-in-up">
+                            Descubre el poder de la naturaleza con nuestros aceites de pepita de uva 100% naturales.
+                            Nutre, revitaliza e hidrata tu piel y cabello como nunca antes.
+                        </p>
+                        <a href="#"
+                            class="inline-block bg-gradient-to-r from-purple-600 to-green-600 text-white font-bold py-3 px-8 rounded-full hover:from-purple-700 hover:to-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 animate-pulse">
+                            COMPRAR AHORA
+                        </a>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="md:w-1/2 grid grid-cols-2 gap-4 animate-fade-in">
+                        <div
+                            class="relative rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                            <img src="images/1.png" alt="Mujer sonriendo"
+                                class="rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-purple-600 opacity-30 hover:opacity-0 transition duration-300">
+                            </div>
+                        </div>
+
+                        <div
+                            class="relative rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                            <img src="images/piel.png" alt="Mujer sonriendo"
+                                class="rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                            <div
+                                class="absolute inset-0 bg-purple-600 opacity-30 hover:opacity-0 transition duration-300">
+                            </div>
+                        </div>
+
+
+
+
+                        <div
+                            class="relative rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                            <img src="images/hombre.png" alt="Uvas" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-purple-600 opacity-30 hover:opacity-0 transition duration-300">
+                            </div>
+                        </div>
+                        <div
+                            class="relative rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                            <img src="images/pelo.png" alt="Uvas" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-purple-600 opacity-30 hover:opacity-0 transition duration-300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seccion de ingenieros  -->
+    <section class="py-16 bg-gradient-to-br from-purple-50 to-green-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Nuestro Equipo de Ingeniería</h2>
+
+            <div class="mb-12 text-center">
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    En el corazón de Vital Grape, nuestros ingenieros químicos trabajan incansablemente para desarrollar
+                    productos innovadores y efectivos utilizando lo mejor de las uvas peruanas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+                    <img src="images/produccion-raquel.jpg" alt="Ingenieros químicos trabajando"
+                        class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-semibold text-green-600">Innovación y Experiencia</h3>
+                    <p class="text-lg text-gray-700">
+                        Nuestro equipo de ingenieros químicos combina años de experiencia con un profundo conocimiento
+                        de las propiedades únicas de las uvas peruanas. Su dedicación a la investigación y desarrollo
+                        nos permite ofrecer productos de belleza y cuidado personal de la más alta calidad.
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Especialización en fitoquímicos de la uva</li>
+                        <li>Desarrollo de fórmulas exclusivas</li>
+                        <li>Optimización de procesos de extracción</li>
+                        <li>Compromiso con la sostenibilidad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-xl p-8 mb-16">
+                <h3 class="text-2xl font-semibold text-purple-800 mb-6 text-center">Nuestro Proceso de Desarrollo</h3>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🔬</div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Investigación</h4>
+                        <p class="text-gray-600">Nuestros ingenieros lideran cada etapa, asegurando la más alta calidad.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">⚗️</div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Formulación</h4>
+                        <p class="text-gray-600">Nuestros ingenieros lideran cada etapa, asegurando la más alta calidad.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🧪</div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Pruebas</h4>
+                        <p class="text-gray-600">Nuestros ingenieros lideran cada etapa, asegurando la más alta calidad.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🏭</div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Producción</h4>
+                        <p class="text-gray-600">Nuestros ingenieros lideran cada etapa, asegurando la más alta calidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 class="text-3xl font-semibold text-purple-800 mb-8">Conoce a Nuestros Líderes</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                    <!-- Líder 1 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="images/raquel.jpg" alt="Dra. María Rodríguez"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Dra. María Rodríguez</h4>
+                        <p class="text-gray-600">Jefa de Investigación y Desarrollo</p>
+                    </div>
+
+                    <!-- Líder 2 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="images/raquel.jpg" alt="Ing. Carlos Mendoza" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Ing. Carlos Mendoza</h4>
+                        <p class="text-gray-600">Especialista en Procesos de Extracción</p>
+                    </div>
+
+                    <!-- Líder 3 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="images/raquel.jpg" alt="Dra. Ana Suárez" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Dra. Ana Suárez</h4>
+                        <p class="text-gray-600">Líder de Formulación de Productos</p>
+                    </div>
+
+                    <!-- Líder 4 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="images/raquel.jpg" alt="Ing. Roberto Gómez" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Ing. Roberto Gómez</h4>
+                        <p class="text-gray-600">Director de Control de Calidad</p>
+                    </div>
+
+                    <!-- Líder 5 -->
+                    <div
+                        class="bg-white p-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl">
+                        <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                            <img src="images/raquel.jpg" alt="Dra. Laura Vega" class="w-full h-full object-cover">
+                        </div>
+                        <h4 class="text-xl font-semibold text-green-600 mb-2">Dra. Laura Vega</h4>
+                        <p class="text-gray-600">Gerente de Sostenibilidad</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-extrabold text-center text-purple-800 mb-8">Nuestros Productos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Producto 1 -->
+                <div
+                    class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg" src="images/4.png?height=300&width=300"
+                            alt="Aceite de Pepita de Uva" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Aceite de
+                                Pepa de uva</h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 30.00</span>
+                            <a href="#"
+                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Agregar
+                                al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div
+                    class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg" src="images/9.png?height=300&width=300"
+                            alt="Crema Hidratante de Uva" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Exfoliante de
+                                Pepa de uva</h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.8</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 15.00</span>
+                            <a href="#"
+                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Agregar
+                                al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div
+                    class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="p-8 rounded-t-lg" src="images/5.png?height=300&width=300" alt="Serum de Uva" />
+                    </a>
+                    <div class="px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Set masaje
+                                Facial</h5>
+                        </a>
+                        <div class="flex items-center mt-2.5 mb-5">
+                            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                    <path
+                                        d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                </svg>
+                            </div>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.9</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 20.00</span>
+                            <a href="#"
+                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Agregar
+                                al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Historia -->
+    <section class="py-16 ">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Nuestra Historia</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <p class="text-lg text-gray-700">
+                        Vital Grape nació con el propósito de crear productos conscientes que cuiden de ti y del
+                        planeta. Nuestra historia comenzó en los viñedos, donde descubrimos el increíble potencial del
+                        aceite de pepita de uva.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Desde nuestros inicios, nos hemos dedicado a perfeccionar el proceso de producción del aceite de
+                        uva, utilizando métodos sostenibles y respetuosos con el medio ambiente.
+                    </p>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-green-600 mb-4">Nuestro Proceso de Producción</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Selección cuidadosa de las mejores uvas</li>
+                            <li>Extracción en frío para preservar nutrientes</li>
+                            <li>Filtración de alta calidad</li>
+                            <li>Embotellado en envases eco-friendly</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="relative h-96 rounded-xl overflow-hidden shadow-2xl">
+                        <img src="images/produccion2.jpg" alt="Producción de aceite de uva"
+                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+                    </div>
+                    <blockquote class="bg-purple-600 text-white p-6 rounded-lg shadow-lg">
+                        <p class="text-xl italic mb-4">
+                            "Nacimos con el propósito de crear productos conscientes que cuiden de ti y del planeta."
+                        </p>
+                        <footer class="text-right">- Fundadores de Vital Grape</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="mt-16">
+                <h3 class="text-3xl font-semibold text-center text-purple-800 mb-8">Nuestro Compromiso</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+                            <span class="text-2xl text-green-600">1</span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-purple-800 mb-2">Calidad</h4>
+                        <p class="text-gray-600">
+                            Nos esforzamos por mantener los más altos estándares en calidad en cada paso de nuestra
+                            producción.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+                            <span class="text-2xl text-green-600">2</span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-purple-800 mb-2">Sostenibilidad</h4>
+                        <p class="text-gray-600">
+                            Nos esforzamos por mantener los más altos estándares en sostenibilidad en cada paso de
+                            nuestra producción.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
+                            <span class="text-2xl text-green-600">3</span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-purple-800 mb-2">Innovación</h4>
+                        <p class="text-gray-600">
+                            Nos esforzamos por mantener los más altos estándares en innovación en cada paso de nuestra
+                            producción.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Seccion e imagenes -->
+
+    <section class="py-16 ">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Galeria</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="h-auto max-w-full rounded-lg"
+                            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Sección de Contacto -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Contáctanos</h2>
+            <div class="max-w-3xl mx-auto">
+                <form action="mailto:tu@email.com" method="post" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                        <input type="text" id="name" name="name" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit"
+                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Corporaión Vital Grape SAC</h3>
+                    <p class="mb-4">Cuidando de ti y del planeta con lo mejor de las uvas peruanas.</p>
+                    <div class="flex space-x-4">
+                        <a href="@Vital_grape" class="text-white hover:text-green-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="@Vital_grape" class="text-white hover:text-green-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="@Vital_grape" class="text-white hover:text-green-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-green-300">Inicio</a></li>
+                        <li><a href="#" class="hover:text-green-300">Productos</a></li>
+                        <li><a href="#" class="hover:text-green-300">Sobre Nosotros</a></li>
+                        <li><a href="#" class="hover:text-green-300">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contacto</h3>
+                    <p class="mb-2">P555+MC9, Eucaliptos, Lima 1582, Perú</p>
+                    <p class="mb-2">Teléfono: +51 123 456 789</p>
+                    <p>Email: info@vitalgrape.com</p>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-purple-700 text-center">
+                <p>&copy; 2024 Corporaión Vital Grape SAC. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para el toggle del menú en dispositivos móviles
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+            const menu = document.getElementById('navbar-sticky');
+
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
