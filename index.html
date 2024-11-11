@@ -149,13 +149,18 @@
                 <div class="space-y-6">
                     <h3 class="text-3xl font-semibold text-green-600">Innovación y Experiencia</h3>
                     <p class="text-lg text-gray-700">
-                        En Vital Grape, nuestro equipo de ingenieros químicos extrae lo mejor de las uvas peruanas: utilizando tecnología de fluidos supercríticos, obtenemos un aceite de pepas de uva puro y beneficioso para la salud, reflejando nuestro compromiso con el desarrollo sostenible de la industria en el Perú.
+                        En Vital Grape, nuestro equipo de ingenieros químicos extrae lo mejor de las uvas peruanas:
+                        utilizando tecnología de fluidos supercríticos, obtenemos un aceite de pepas de uva puro y
+                        beneficioso para la salud, reflejando nuestro compromiso con el desarrollo sostenible de la
+                        industria en el Perú.
                     </p>
                     <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Especialización en fitoquímicos de la uva</li>
-                        <li>Desarrollo de fórmulas exclusivas</li>
-                        <li>Optimización de procesos de extracción</li>
-                        <li>Compromiso con la sostenibilidad</li>
+                        <li>Extracción de aceite de uva puro mediante fluidos supercríticos.
+                           
+                            </li>
+                        <li> Formulación de productos exclusivos con potentes propiedades antioxidantes.</li>
+                        <li>Procesos optimizados y sostenibles que transforman residuos en productos de alto valor, contribuyendo al cuidado del medio ambiente.</li>
+                        
                     </ul>
                 </div>
             </div>
@@ -252,6 +257,7 @@
 
 
     <!-- Sección de Productos -->
+    <!-- Sección de Productos -->
     <section id="productos" class="py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-extrabold text-center text-purple-800 mb-8">Nuestros Productos</h2>
@@ -279,21 +285,27 @@
                             <span
                                 class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 30.00</span>
-                            <a href="#"
-                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Agregar
-                                al carrito</a>
+                        <div class="flex items-center justify-between p-4 m-4">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 38.00</span>
+                            <button
+                                onclick="openModal('Aceite de Pepa de uva', 'images/9.png', 'PEN 15.00', 'Aceite de pepita de uva extra virgen, ideal para la piel y el cuidado capilar.', ['Antioxidante', 'Antienvejecimiento', 'Para pieles sensibles, grasas o mixtas', 'Protector de la radiación UV', 'Brillo y nutrición capilar', 'Control de estrías', 'Promueve la cicatrización'])"
+                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                Ver
+                            </button>
+                            <a href="javascript:void(0);" onclick="addToCart('Aceite de Pepa de uva', 30.00)"
+                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                Agregar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 2 -->
+                <!-- Producto 2 (sin detalle) -->
                 <div
                     class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         <img class="p-8 rounded-t-lg" src="images/9.png?height=300&width=300"
-                            alt="Crema Hidratante de Uva" />
+                            alt="Exfoliante de Pepa de uva" />
                     </a>
                     <div class="px-5 pb-5">
                         <a href="#">
@@ -311,16 +323,17 @@
                             <span
                                 class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.8</span>
                         </div>
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between p-4 m-4">
                             <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 15.00</span>
-                            <a href="#"
-                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Agregar
-                                al carrito</a>
+                            <a href="javascript:void(0);" onclick="addToCart('Exfoliante de pepa de uva', 15.00)"
+                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                Agregar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 3 -->
+                <!-- Producto 3 (sin detalle) -->
                 <div
                     class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
@@ -340,21 +353,23 @@
                                 </svg>
                             </div>
                             <span
-                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.9</span>
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.8</span>
                         </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 20.00</span>
-                            <a href="#"
-                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Agregar
-                                al carrito</a>
+                        <div class="flex items-center justify-between p-4 m-4">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">PEN 18.00</span>
+                            <a href="javascript:void(0);" onclick="addToCart('Set masaje Facial', 18.00)"
+                                class="text-white bg-purple-600 hover:bg-purple-700 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                                Agregar
+                            </a>
                         </div>
                     </div>
                 </div>
 
-
+              
             </div>
         </div>
     </section>
+
 
     <!-- Sección de Historia -->
     <section id="nosotros" class="py-16 ">
@@ -394,41 +409,7 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="mt-16">
-                <h3 class="text-3xl font-semibold text-center text-purple-800 mb-8">Nuestro Compromiso</h3>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
-                            <span class="text-2xl text-green-600">1</span>
-                        </div>
-                        <h4 class="text-xl font-semibold text-purple-800 mb-2">Calidad</h4>
-                        <p class="text-gray-600">
-                            Nos esforzamos por mantener los más altos estándares en calidad en cada paso de nuestra
-                            producción.
-                        </p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
-                            <span class="text-2xl text-green-600">2</span>
-                        </div>
-                        <h4 class="text-xl font-semibold text-purple-800 mb-2">Sostenibilidad</h4>
-                        <p class="text-gray-600">
-                            Nos esforzamos por mantener los más altos estándares en sostenibilidad en cada paso de
-                            nuestra producción.
-                        </p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center">
-                            <span class="text-2xl text-green-600">3</span>
-                        </div>
-                        <h4 class="text-xl font-semibold text-purple-800 mb-2">Innovación</h4>
-                        <p class="text-gray-600">
-                            Nos esforzamos por mantener los más altos estándares en innovación en cada paso de nuestra
-                            producción.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section>
 
@@ -517,7 +498,10 @@
                             <p class="text-gray-600 mb-4">Teléfono: +51 123 456 789</p>
                         </div>
                         <div class="h-96 w-full">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7797.707423424361!2d-76.8322222!3d-12.2581773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105965f2823f8b7%3A0x82b890c30658f5e2!2sP5VF%2B2VG%2C%2015823!5e0!3m2!1ses!2spe!4v1731285118509!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7797.707423424361!2d-76.8322222!3d-12.2581773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105965f2823f8b7%3A0x82b890c30658f5e2!2sP5VF%2B2VG%2C%2015823!5e0!3m2!1ses!2spe!4v1731285118509!5m2!1ses!2spe"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -607,7 +591,41 @@
             </div>
         </div>
     </footer>
+    <div class="fixed bottom-5 right-5">
+        <button onclick="openCartDetails()"
+            class="relative bg-purple-600 text-white font-semibold rounded-full shadow-lg p-4 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300">
+            <span>🛒</span>
+            <span id="cart-count"
+                class="absolute top-0 right-0 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">0</span>
+        </button>
+    </div>
+    <!-- Modal de detalle del producto -->
+    <div id="detail-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-5 w-80">
+            <h3 id="detail-product-name" class="text-lg font-semibold mb-4">Detalles del Producto</h3>
+            <img id="detail-product-image" src="" alt="Imagen del producto" class="w-full h-auto mb-4">
+            <p id="detail-product-description" class="text-gray-700 mb-4"></p>
+            <ul id="detail-product-properties" class="text-sm text-gray-700 mb-4"></ul>
+            <button onclick="addToCartFromModal()"
+                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Agregar al carrito</button>
+            <button onclick="closeDetailModal()"
+                class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 mt-2">Cerrar</button>
+        </div>
+    </div>
 
+    <!-- Modal de detalle del carrito -->
+    <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-5 w-80">
+            <h3 class="text-lg font-semibold mb-4">Detalles del carrito</h3>
+            <div id="cart-details" class="mb-4">
+                <!-- Aquí se mostrarán los detalles del carrito -->
+            </div>
+            <button onclick="enviarPedidoWhatsApp()"
+                class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Enviar Pedido por WhatsApp</button>
+            <button onclick="closeCartModal()"
+                class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 mt-2">Cerrar</button>
+        </div>
+    </div>
     <script>
         // JavaScript para el toggle del menú en dispositivos móviles
         document.addEventListener('DOMContentLoaded', function () {
@@ -619,6 +637,125 @@
             });
         });
     </script>
+
+    <script>
+        let cart = [];
+        let currentProduct = null;
+
+        // Función para abrir el modal de detalles del producto
+        function openModal(productName, productImage, productPrice, productDescription, productProperties) {
+            document.getElementById('detail-product-name').textContent = productName;
+            document.getElementById('detail-product-image').src = productImage;
+            document.getElementById('detail-product-description').textContent = productDescription;
+
+            let propertiesList = productProperties.map(prop => `<li>• ${prop}</li>`).join('');
+            document.getElementById('detail-product-properties').innerHTML = propertiesList;
+
+            currentProduct = {
+                name: productName,
+                price: productPrice,
+                properties: productProperties
+            };
+
+            document.getElementById('detail-modal').classList.remove('hidden');
+        }
+
+        // Función para agregar el producto desde el modal al carrito
+        function addToCartFromModal() {
+            addToCart(currentProduct.name, currentProduct.price, 1);
+            closeDetailModal();
+        }
+
+        // Función para agregar productos al carrito
+        function addToCart(productName, productPrice, quantity) {
+            const productIndex = cart.findIndex(item => item.name === productName);
+
+            if (productIndex > -1) {
+                // Incrementa la cantidad si el producto ya está en el carrito
+                cart[productIndex].quantity += quantity;
+            } else {
+                // Agrega el producto al carrito si no existe
+                cart.push({ name: productName, price: productPrice, quantity: quantity });
+            }
+
+            updateCartCount();
+        }
+
+        // Función para actualizar la cantidad en el icono del carrito
+        function updateCartCount() {
+            const cartCount = document.getElementById('cart-count');
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+        }
+
+        // Función para abrir el modal con el detalle del carrito
+        function openCartDetails() {
+            let cartDetails = document.getElementById('cart-details');
+            cartDetails.innerHTML = '';
+
+            if (cart.length === 0) {
+                cartDetails.innerHTML = '<p>El carrito está vacío</p>';
+            } else {
+                cart.forEach(item => {
+                    cartDetails.innerHTML += `
+                        <div class="mb-4">
+                            <div class="flex items-center justify-between my-2">
+                                <span>${item.name} (x${item.quantity})</span>
+                                <span>PEN ${(item.price * item.quantity).toFixed(2)}</span>
+                                <button onclick="removeFromCart('${item.name}')" class="text-red-600 ml-2">🗑️</button>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            document.getElementById('cart-modal').classList.remove('hidden');
+        }
+
+        // Función para eliminar productos del carrito
+        function removeFromCart(productName) {
+            cart = cart.filter(item => item.name !== productName);
+            updateCartCount();
+            openCartDetails();
+        }
+
+        // Función para enviar el pedido a WhatsApp
+        function enviarPedidoWhatsApp() {
+            let mensaje = 'Detalles del pedido:\n\n';
+            cart.forEach(item => {
+                mensaje += `${item.name} (x${item.quantity}): PEN ${(item.price * item.quantity).toFixed(2)}\n`;
+            });
+            mensaje += 'Total: PEN ' + cart.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
+
+            // Enlace de WhatsApp
+            const whatsappLink = `https://wa.me/51XXXXXXXXX?text=${encodeURIComponent(mensaje)}`;
+            window.open(whatsappLink, '_blank');
+        }
+
+        // Función para cerrar el modal de detalle del producto
+        function closeDetailModal() {
+            document.getElementById('detail-modal').classList.add('hidden');
+        }
+
+        // Función para cerrar el modal del carrito
+        function closeCartModal() {
+            document.getElementById('cart-modal').classList.add('hidden');
+        }
+
+        // Cerrar el modal si se hace clic fuera del área de contenido
+        document.getElementById('detail-modal').addEventListener('click', function (event) {
+            if (event.target === this) {
+                closeDetailModal();
+            }
+        });
+
+        document.getElementById('cart-modal').addEventListener('click', function (event) {
+            if (event.target === this) {
+                closeCartModal();
+            }
+        });
+    </script>
+
 </body>
 
 </html>
